@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto&display=swap');
+
+:root {
+  font-size: 62.5%;
+
+  /* fonts */
+  --timer:'Orbitron', sans-serif;
+  --title-buttons: 'Roboto', sans-serif;
+
+  /* colors */
+  --black: #131313;
+  --beaver: #A9927D;
+  --brown: #5E503F;
+  --white: #F2F4F3;
+  --chocolate-cosmos: #49111C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--black);
+}
+
+/* timer-area */
+#timer-area {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+  place-content: center;
+}
+
+/* container */
+.border-container {
+  margin-top: 2rem;
+  padding: .4rem;
+  background: linear-gradient(to right, var(--brown), var(--beaver));
+  border-radius: 50%;
+}
+
+.container {
+  background: var(--black);
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 4rem;
+}
+
+/* title */
+.main-title {
+  text-align: center;
+  font-family: var(--title-buttons);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--beaver);
+}
+
+#counter-area {
+  background-color: var(--white);
+  width: 15rem;
+  height: 4rem;
+  border-radius: .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* timer */
+.chronometer {
+  color: var(--black);
+  font-size: 2rem;
+  font-family: var(--timer);
+}
+
+/* buttons */
+#buttons-area {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+#buttons-area button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#buttons-area button i {
+  font-size: 24px;
+}
+
+#buttons-area button:nth-child(1) {
+  color: var(--beaver);
+}
+
+#buttons-area button:nth-child(2) {
+  color: var(--chocolate-cosmos);
+}
+
+#buttons-area button:nth-child(3) {
+  color: #A9927D;
+}
+
+.pause {
+  color: var(--chocolate-cosmos);
+  font-weight: 700;
+}
